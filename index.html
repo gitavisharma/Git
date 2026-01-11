@@ -2,29 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jenkins Auto Deployment Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #111827;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #22d3ee;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .badge {
+            margin-top: 20px;
+            display: inline-block;
+            background: #22c55e;
+            color: #022c22;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .timestamp {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #9ca3af;
+        }
+    </style>
 </head>
-<style>
-    h1{
-        color: white;
-    }
-    
-    body{
-        background-color: black;
-    }
-    a{
-        color: black;
-    }
-</style>
 <body>
 
+<div class="card">
+    <h1>🚀 Jenkins Auto Deployment</h1>
+    <p>
+        This website is automatically deployed using a Jenkins CI/CD pipeline.
+        Any code push to GitHub triggers Jenkins, which pulls the latest code
+        and deploys it to the server without manual intervention.
+    </p>
 
-      		
-    <H1>Deploy the web</H1>
-    <H1>We have added this line</H1>
-    <H1>Hello Git and GitHub! Dev2 file and f1 branch</H1>
-    <H2>Changes are being made</H2>
-    <a href="www.youtube.com">This is link</a>
+    <div class="badge">CI/CD Enabled</div>
+
+    <div class="timestamp">
+        Last Deployment: <strong><!-- UPDATE TIME HERE --></strong>
+    </div>
+</div>
+
 </body>
 </html>
